@@ -1,0 +1,55 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Plants - Plant Care Management</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <img src="../assets/images/logo.svg" alt="logo" class="logo" />
+    <h1>Plants</h1>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="care_logs.html">Care Logs</a>
+      <a href="gardeners.html">Gardeners</a>
+      <a href="supplies.html">Supplies</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section>
+      <div class="toolbar">
+        <input id="search" placeholder="Search plants..." />
+        <button id="newPlant" class="btn">New Plant</button>
+      </div>
+
+      <table id="plantsTable" class="table">
+        <thead>
+          <tr><th>ID</th><th>Name</th><th>Species</th><th>Water Frequency</th><th>Sunlight</th><th>Actions</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+    </section>
+  </main>
+
+  <template id="rowTpl">
+    <tr>
+      <td class="id"></td>
+      <td class="name"></td>
+      <td class="species"></td>
+      <td class="water"></td>
+      <td class="sun"></td>
+      <td>
+        <button class="edit btn small">Edit</button>
+        <button class="delete btn small danger">Delete</button>
+      </td>
+    </tr>
+  </template>
+
+  <script src="../js/plants.js"></script>
+</body>
+</html>

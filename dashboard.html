@@ -1,0 +1,38 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Dashboard - Plant Care Management</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <img src="../assets/images/logo.svg" alt="logo" class="logo" />
+    <h1>Dashboard</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="plants.html">Plants</a>
+      <a href="care_routines.html">Routines</a>
+      <a href="care_logs.html">Care Logs</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <img src="../assets/images/pot_with_plant.svg" alt="plant" class="hero-img" />
+      <div>
+        <h2>Overview</h2>
+        <p>Quick status of your plants: moisture, last watered, upcoming routines.</p>
+      </div>
+    </section>
+
+    <section id="statusCards" class="cards" style="margin-top:18px">
+      <!-- Cards populated by JS -->
+    </section>
+  </main>
+
+  <script src="../js/dashboard.js"></script>
+</body>
+</html>
